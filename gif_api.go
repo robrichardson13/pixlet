@@ -3,32 +3,19 @@ package gif_api
 import (
 	"fmt"
 	"image"
-	"io/ioutil"
 	"log"
-	"strings"
 
 	"github.com/robrichardson13/pixlet/encode"
 	"github.com/robrichardson13/pixlet/runtime"
 )
 
-func GIF() string {
-	script := "message.star"
-
-	if !strings.HasSuffix(script, ".star") {
-		fmt.Printf("script file must have suffix .star: %s\n", script)
-		return "script file must have suffix .star"
-	}
-
-	src, err := ioutil.ReadFile(script)
-	if err != nil {
-		fmt.Printf("failed to read file %s: %v\n", script, err)
-		return "failed to read file"
-	}
+func GIF(src []byte) string {
+	script := "temp.star"
 
 	runtime.InitCache(runtime.NewInMemoryCache())
 
 	applet := runtime.Applet{}
-	err = applet.Load(script, src, nil)
+	err := applet.Load(script, src, nil)
 	if err != nil {
 		fmt.Printf("failed to load applet: %v\n", err)
 		return "failed to load applet"
