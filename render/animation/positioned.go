@@ -6,7 +6,7 @@ import (
 
 	"github.com/fogleman/gg"
 
-	"tidbyt.dev/pixlet/render"
+	"github.com/robrichardson13/pixlet/render"
 )
 
 type AnimatedPositioned struct {

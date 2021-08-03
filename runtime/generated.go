@@ -8,9 +8,9 @@ import (
 
 	"github.com/lucasb-eyer/go-colorful"
 	"github.com/mitchellh/hashstructure/v2"
+	"github.com/robrichardson13/pixlet/render"
 	"go.starlark.net/starlark"
 	"go.starlark.net/starlarkstruct"
-	"tidbyt.dev/pixlet/render"
 )
 
 const (

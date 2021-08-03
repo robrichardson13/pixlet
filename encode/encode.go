@@ -11,7 +11,7 @@ import (
 
 	"github.com/harukasan/go-libwebp/webp"
 	"github.com/pkg/errors"
-	"tidbyt.dev/pixlet/render"
+	"github.com/robrichardson13/pixlet/render"
 )
 
 const (

@@ -3,7 +3,7 @@ package encode
 import (
 	"testing"
 
-	"tidbyt.dev/pixlet/runtime"
+	"github.com/robrichardson13/pixlet/runtime"
 )
 
 var BenchmarkDotStar = `

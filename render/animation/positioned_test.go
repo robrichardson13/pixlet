@@ -5,8 +5,8 @@ import (
 	"image/color"
 	"testing"
 
+	"github.com/robrichardson13/pixlet/render"
 	"github.com/stretchr/testify/assert"
-	"tidbyt.dev/pixlet/render"
 )
 
 func TestPositionedLinearCurve(t *testing.T) {

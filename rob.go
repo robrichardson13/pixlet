@@ -7,8 +7,8 @@ import (
 	"log"
 	"strings"
 
-	"tidbyt.dev/pixlet/encode"
-	"tidbyt.dev/pixlet/runtime"
+	"github.com/robrichardson13/pixlet/encode"
+	"github.com/robrichardson13/pixlet/runtime"
 )
 
 func rob() string {

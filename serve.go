@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"tidbyt.dev/pixlet/server"
+	"github.com/robrichardson13/pixlet/server"
 )
 
 var (

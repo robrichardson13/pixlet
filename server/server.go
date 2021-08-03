@@ -12,8 +12,8 @@ import (
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/gorilla/websocket"
-	"tidbyt.dev/pixlet/encode"
-	"tidbyt.dev/pixlet/runtime"
+	"github.com/robrichardson13/pixlet/encode"
+	"github.com/robrichardson13/pixlet/runtime"
 )
 
 // Server provides functionality to serve Starlark over HTTP. It has

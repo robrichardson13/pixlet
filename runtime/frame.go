@@ -6,7 +6,7 @@ import (
 	"github.com/mitchellh/hashstructure/v2"
 	"go.starlark.net/starlark"
 
-	"tidbyt.dev/pixlet/render"
+	"github.com/robrichardson13/pixlet/render"
 )
 
 type Root struct {

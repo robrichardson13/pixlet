@@ -1,4 +1,4 @@
-module tidbyt.dev/pixlet
+module github.com/robrichardson13/pixlet
 
 go 1.14
 

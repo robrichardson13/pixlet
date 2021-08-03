@@ -3,8 +3,8 @@ package encode
 import (
 	"testing"
 
+	"github.com/robrichardson13/pixlet/runtime"
 	"github.com/stretchr/testify/assert"
-	"tidbyt.dev/pixlet/runtime"
 )
 
 var TestDotStar = `
