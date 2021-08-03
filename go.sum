@@ -225,6 +225,8 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/posener/complete v1.1.1/go.mod h1:em0nMJCgc9GFtwrmVmEMR/ZL6WyhyjMBndrE9hABlRI=
 github.com/prometheus/client_model v0.0.0-20190812154241-14fe0d1b01d4/go.mod h1:xMI15A0UPsDsEKsMN9yxemIoYk6Tm2C1GtYGdfGttqA=
+github.com/robrichardson13/starlib v0.4.2-0.20210803063018-5db9e2982581 h1:/rcVaEGd3pC7nU4Sh+331hhnUNmBpVeLT3s8vIdlpmc=
+github.com/robrichardson13/starlib v0.4.2-0.20210803063018-5db9e2982581/go.mod h1:gpf2XSSBr6A1WHqqaEiTjcEYj+dpxTJ7EGy4oIqkYBg=
 github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6LYCDYWNEvQ=
 github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFRclV5y23lUDJ4=
 github.com/russross/blackfriday/v2 v2.0.1/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
@@ -255,8 +257,6 @@ github.com/tidbyt/go-bdf v0.0.0-20200807014123-29975f932239 h1:if+uSJ3WHMLcrrgYK
 github.com/tidbyt/go-bdf v0.0.0-20200807014123-29975f932239/go.mod h1:M5rsxo6DpC+Y1ClGEa6KqIc5jTfdH0SfrKFYxWqdsW0=
 github.com/tidbyt/go-libwebp v0.0.0-20201015173751-7718986fb5f2 h1:T/jkZO+VeoP9QPPAidWR89NWUeT4VluF2vMLgmZtSy8=
 github.com/tidbyt/go-libwebp v0.0.0-20201015173751-7718986fb5f2/go.mod h1:p1Ify/wlo/z2CCUv0o+4j4lvBvEf1SWO5LYRDmadNY0=
-github.com/tidbyt/starlib v0.4.2-0.20200729192616-ef2649a4219c h1:QlX1+kdR93ojdsdHJCzyg9mlfOBid3ySH9TXKVz1Nt8=
-github.com/tidbyt/starlib v0.4.2-0.20200729192616-ef2649a4219c/go.mod h1:2xlZ9r2UV4LF4G9mpYPBWo7CtXtdW0h1RoGIkZ8elOE=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=

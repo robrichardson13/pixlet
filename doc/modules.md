@@ -23,17 +23,17 @@ load("render.star", r="render")
 ## Starlib modules
 
 Pixlet offers a subset of the modules provided by the [Starlib
-project](https://github.com/qri-io/starlib). For documentation of the
+project](https://github.com/robrichardson13/starlib). For documentation of the
 individual modules, please refer to the Starlib documentation.
 
 | Module | Description |
 | --- | --- |
-| [`encoding/base64.star`](https://github.com/qri-io/starlib/tree/master/encoding/base64) | Base 64 encoding and decoding |
-| [`encoding/json.star`](https://github.com/qri-io/starlib/tree/master/encoding/json) | JSON encoding and decoding |
-| [`http.star`](https://github.com/qri-io/starlib/tree/master/http) | HTTP client |
-| [`math.star`](https://github.com/qri-io/starlib/tree/master/math) | Mathematical functions and constants |
-| [`re.star`](https://github.com/qri-io/starlib/tree/master/re) | Regular expressions |
-| [`time.star`](https://github.com/qri-io/starlib/tree/master/time) | Time operations |
+| [`encoding/base64.star`](https://github.com/robrichardson13/starlib/tree/master/encoding/base64) | Base 64 encoding and decoding |
+| [`encoding/json.star`](https://github.com/robrichardson13/starlib/tree/master/encoding/json) | JSON encoding and decoding |
+| [`http.star`](https://github.com/robrichardson13/starlib/tree/master/http) | HTTP client |
+| [`math.star`](https://github.com/robrichardson13/starlib/tree/master/math) | Mathematical functions and constants |
+| [`re.star`](https://github.com/robrichardson13/starlib/tree/master/re) | Regular expressions |
+| [`time.star`](https://github.com/robrichardson13/starlib/tree/master/time) | Time operations |
 
 ## Pixlet module: Cache
 

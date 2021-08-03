@@ -9,9 +9,9 @@ import (
 	"image/gif"
 	"time"
 
-	"github.com/harukasan/go-libwebp/webp"
 	"github.com/pkg/errors"
 	"github.com/robrichardson13/pixlet/render"
+	"github.com/tidbyt/go-libwebp/webp"
 )
 
 const (

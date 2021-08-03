@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	starlibbase64 "github.com/qri-io/starlib/encoding/base64"
+	starlibbase64 "github.com/robrichardson13/starlib/encoding/base64"
 	"github.com/stretchr/testify/assert"
 	"go.starlark.net/starlark"
 )

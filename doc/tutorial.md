@@ -56,11 +56,11 @@ To get closer to a truly useful Pixlet app, we'll be pulling in some
 Bitcoin data. CoinDesk's [Bitcoin Price Index
 API](https://www.coindesk.com/coindesk-api) is free to use and
 requires no authentication. We'll use Starlib's [http
-module](https://github.com/qri-io/starlib/tree/master/html) to
+module](https://github.com/robrichardson13/starlib/tree/master/html) to
 retrieve the data.
 
 Pixlet includes several modules from the
-[Starlib](https://github.com/qri-io/starlib) library. This is sort of
+[Starlib](https://github.com/robrichardson13/starlib) library. This is sort of
 a standard library for Starlark, and it's very handy when building
 anything but the simplest applet.
 
