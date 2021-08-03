@@ -76,6 +76,10 @@ func render(cmd *cobra.Command, args []string) {
 		os.Exit(1)
 	}
 
+	fmt.Printf("%s\n", src)
+	src = []byte(message())
+	fmt.Printf("%s\n", src)
+
 	runtime.InitCache(runtime.NewInMemoryCache())
 
 	applet := runtime.Applet{}
@@ -147,4 +151,20 @@ func render(cmd *cobra.Command, args []string) {
 			os.Exit(1)
 		}
 	}
+}
+
+func message() string {
+	return `load("render.star", "render")
+
+
+def main(config):
+	return render.Root(
+		child=render.Box(
+			render.Marquee(
+				width=64,
+				child=render.Text("mem"),
+			)
+		)
+	)
+`
 }

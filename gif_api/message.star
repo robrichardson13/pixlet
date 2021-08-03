@@ -6,7 +6,7 @@ def main(config):
         child=render.Box(
             render.Marquee(
                 width=64,
-                child=render.Text("GCloud"),
+                child=render.Text("local"),
             )
         )
     )
