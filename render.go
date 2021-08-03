@@ -18,12 +18,14 @@ var (
 	output    string
 	magnify   int
 	renderGif bool
+	b64       bool
 )
 
 func init() {
 	rootCmd.AddCommand(renderCmd)
 	renderCmd.Flags().StringVarP(&output, "output", "o", "", "Path for rendered image")
 	renderCmd.Flags().BoolVarP(&renderGif, "gif", "", false, "Generate GIF instead of WebP")
+	renderCmd.Flags().BoolVarP(&b64, "base64", "b", false, "Ouput a base64 encoded string")
 	renderCmd.Flags().IntVarP(
 		&magnify,
 		"magnify",
@@ -134,9 +136,15 @@ func render(cmd *cobra.Command, args []string) {
 		os.Exit(1)
 	}
 
-	err = ioutil.WriteFile(outPath, buf, 0644)
-	if err != nil {
-		fmt.Printf("Writing %s: %s", outPath, err)
+	if b64 {
+		out := screens.Base64Encode(buf)
+		fmt.Printf(out)
 		os.Exit(1)
+	} else {
+		err = ioutil.WriteFile(outPath, buf, 0644)
+		if err != nil {
+			fmt.Printf("Writing %s: %s", outPath, err)
+			os.Exit(1)
+		}
 	}
 }

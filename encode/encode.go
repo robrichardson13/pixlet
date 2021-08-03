@@ -2,6 +2,7 @@ package encode
 
 import (
 	"bytes"
+	"encoding/base64"
 	"fmt"
 	"image"
 	"image/color"
@@ -174,4 +175,10 @@ func (s *Screens) render(filters ...ImageFilter) ([]image.Image, error) {
 	}
 
 	return images, nil
+}
+
+func (s *Screens) Base64Encode(message []byte) string {
+	b := make([]byte, base64.StdEncoding.EncodedLen(len(message)))
+	base64.StdEncoding.Encode(b, message)
+	return string(b)
 }
