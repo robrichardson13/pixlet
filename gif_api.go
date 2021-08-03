@@ -1,4 +1,4 @@
-package main
+package gif_api
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/robrichardson13/pixlet/runtime"
 )
 
-func Rob() string {
+func GIF() string {
 	script := "message.star"
 
 	if !strings.HasSuffix(script, ".star") {
@@ -43,35 +43,7 @@ func Rob() string {
 	screens := encode.ScreensFromRoots(roots)
 
 	filter := func(input image.Image) (image.Image, error) {
-		if magnify <= 1 {
-			return input, nil
-		}
-		in, ok := input.(*image.RGBA)
-		if !ok {
-			return nil, fmt.Errorf("image not RGBA, very weird")
-		}
-
-		out := image.NewRGBA(
-			image.Rect(
-				0, 0,
-				in.Bounds().Dx()*magnify,
-				in.Bounds().Dy()*magnify),
-		)
-		for x := 0; x < in.Bounds().Dx(); x++ {
-			for y := 0; y < in.Bounds().Dy(); y++ {
-				for xx := 0; xx < 10; xx++ {
-					for yy := 0; yy < 10; yy++ {
-						out.SetRGBA(
-							x*magnify+xx,
-							y*magnify+yy,
-							in.RGBAAt(x, y),
-						)
-					}
-				}
-			}
-		}
-
-		return out, nil
+		return input, nil
 	}
 
 	var buf []byte
