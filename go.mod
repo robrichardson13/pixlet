@@ -1,6 +1,6 @@
 module github.com/robrichardson13/pixlet
 
-go 1.14
+go 1.13
 
 replace (
 	github.com/harukasan/go-libwebp => github.com/tidbyt/go-libwebp v0.0.0-20201015173751-7718986fb5f2
