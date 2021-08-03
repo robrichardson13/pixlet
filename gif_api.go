@@ -9,7 +9,7 @@ import (
 	"github.com/robrichardson13/pixlet/runtime"
 )
 
-func GIF(src []byte) string {
+func GIF(src []byte, config map[string]string) string {
 	script := "temp.star"
 
 	runtime.InitCache(runtime.NewInMemoryCache())
@@ -21,7 +21,6 @@ func GIF(src []byte) string {
 		return "failed to load applet"
 	}
 
-	config := map[string]string{}
 	roots, err := applet.Run(config)
 	if err != nil {
 		log.Printf("Error running script: %s\n", err)
