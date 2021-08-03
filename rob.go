@@ -11,7 +11,7 @@ import (
 	"github.com/robrichardson13/pixlet/runtime"
 )
 
-func rob() string {
+func Rob() string {
 	script := "message.star"
 
 	if !strings.HasSuffix(script, ".star") {
